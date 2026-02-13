@@ -13,6 +13,11 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container.fade-out {
+  opacity: 0.3;
 }
 
 h1 {
@@ -34,7 +39,22 @@ button {
   color: white;
 }
 
+#increase:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
 #decrease {
   background-color: red;
+  color: white;
+}
+
+#decrease:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+#update {
+  background-color: blue;
   color: white;
 }
